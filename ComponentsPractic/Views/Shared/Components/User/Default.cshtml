@@ -1,0 +1,10 @@
+﻿@model List<User>
+
+<h4>Top 3 Gamers</h4>
+<ul>
+
+	@foreach (var user in Model)
+	{
+		<li>Имя: @user.Name <br /> Игровой счет: @user.Score</li>
+	}
+</ul>
